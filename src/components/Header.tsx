@@ -1,9 +1,14 @@
 import React from 'react'
+import { AppBar, Toolbar, Typography } from '@mui/material'
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <AppBar position='static'>
+      <Toolbar>
+        <Typography variant='h6'>MUI Master-Details App</Typography>
+      </Toolbar>
+    </AppBar>
+  );
+};
 
-export default Header
+export default Header;
